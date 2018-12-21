@@ -8,25 +8,23 @@ import {
 } from 'react-360';
 
 export default class Hello360 extends React.Component {
-  state = {
-    count: 0,
-  };
-
-  // This method increments our count, triggering a re-render
-  _incrementCount = () => {
-    this.setState({count: this.state.count + 1});
-  };
+  // state = {
+  //   count: 0,
+  // };
+  //
+  // // This method increments our count, triggering a re-render
+  // _incrementCount = () => {
+  //   this.setState({count: this.state.count + 1});
+  // };
 
   render() {
     return (
       <View style={styles.panel}>
-        <VrButton
-          onClick={this._incrementCount}
-          style={styles.greetingBox}>
+        <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
-            {`Count: ${this.state.count}`}
+            Welcome to Granada, Spain.
           </Text>
-        </VrButton>
+        </View>
       </View>
     );
   }
@@ -44,7 +42,7 @@ const styles = StyleSheet.create({
   greetingBox: {
     padding: 20,
     backgroundColor: '#000000',
-    borderColor: '#639dda',
+    borderColor: '#000000',
     borderWidth: 2,
   },
   greeting: {
