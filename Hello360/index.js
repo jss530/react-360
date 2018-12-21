@@ -21,9 +21,8 @@ export default class Hello360 extends React.Component {
     return (
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            Welcome to Granada, Spain.
-          </Text>
+          <Text style={styles.greeting}>Welcome to</Text>
+          <Text style={styles.greeting}>Granada, Spain!</Text>
         </View>
       </View>
     );
@@ -47,6 +46,7 @@ const styles = StyleSheet.create({
   },
   greeting: {
     fontSize: 30,
+    alignItems: 'center',
   },
 });
 
